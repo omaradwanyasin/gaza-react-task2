@@ -11,17 +11,16 @@ export default function Scoreboard() {
   }
   function handleFirstNameChange(e) {
     setPlayer({
-      //here you can add letters but the counter is not working so we should update the counter
+      //here nothing to change
       ...player,
       firstName: e.target.value,
-      score: player.score + 1,
     });
   }
   function handleLastNameChange(e) {
-    setPlayer({//here the code was missing to copy the previous data so i added it by distructor (...player) then i also updated the score to match with the letters
+    setPlayer({
+      //here the code was missing to copy the previous data so i added it by distructor (...player)
       ...player,
       lastName: e.target.value,
-      score: player.score + 1,
     });
   }
   return (
